@@ -15,7 +15,6 @@ public class InteractionUI : EditorWindow
     private bool showPathInteractions = false;
     private bool showInfluenceInteractions = false;
     private bool showSaveAndLoad = false;
-    private bool showTextOrientationInteractions = false;
 
     // tools
     private GraphCreationTool graphCreationTool = new();
@@ -25,9 +24,6 @@ public class InteractionUI : EditorWindow
     private HandleDeletionTool handleDeletionTool = new();
     private SemanticInfluenceCreationTool semanticInfluenceCreationTool = new();
     private ColorInfluenceCreationTool visualInfluenceCreationTool = new();
-
-    // orientation
-    private Vector3 previousOrientation = RuntimeInteractionData.orientation;
 
     [MenuItem("Window/Interaction UI")]
     public static void ShowWindow()
@@ -57,13 +53,6 @@ public class InteractionUI : EditorWindow
             DrawPathEditingUI();
         }
 
-        // foldout text orientation
-        showTextOrientationInteractions = EditorGUILayout.Foldout(showTextOrientationInteractions, "Text Orientation Interaction", true);
-        if (showTextOrientationInteractions)
-        {
-            DrawTextOrientationUI();
-        }
-
         // foldout influence
         showInfluenceInteractions = EditorGUILayout.Foldout(showInfluenceInteractions, "Influence Interactions", true);
         if (showInfluenceInteractions)
@@ -71,8 +60,6 @@ public class InteractionUI : EditorWindow
             DrawInfluenceCreationUI();
             DrawInfluenceVisibilityUI();
         }
-
-        
 
         // scene saving and loading
         showSaveAndLoad = EditorGUILayout.Foldout(showSaveAndLoad, "Save And Load Scene", true);
@@ -233,19 +220,6 @@ public class InteractionUI : EditorWindow
         EditorGUILayout.EndVertical();
     }
 
-    private void DrawTextOrientationUI()
-    {
-        EditorGUILayout.Space();
-        EditorGUILayout.LabelField("Text Orientation", EditorStyles.boldLabel);
-
-        EditorGUILayout.BeginVertical("box");
-        {
-            DrawSetTextOrientationButton();
-            DrawTextOrientationInputField();
-            DrawTextOrientationConfirmationButton();
-        }
-        EditorGUILayout.EndVertical();
-    }
     private void DrawInfluenceCreationUI()
     {
         EditorGUILayout.Space();
@@ -571,29 +545,6 @@ public class InteractionUI : EditorWindow
         {
             SaveAndLoadManager.Instance.LoadScene();
         }
-    }
-
-    private void DrawTextOrientationInputField()
-    {
-        RuntimeInteractionData.orientation = EditorGUILayout.Vector3Field("rotation", RuntimeInteractionData.orientation);
-
-        if(previousOrientation != RuntimeInteractionData.orientation)
-        {
-            visualEffect.SetVector3("Rotation", RuntimeInteractionData.orientation);
-            previousOrientation = RuntimeInteractionData.orientation;
-        }
-    }
-
-    private void DrawSetTextOrientationButton()
-    {
-        if(GUILayout.Button("Select Path")){
-
-        }
-    }
-
-    private void DrawTextOrientationConfirmationButton()
-    {
-
     }
   
 }

@@ -659,7 +659,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"804cfd1c6824e2946bef510ea8bfa5c6","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"17e1502119ce38d44b0e5c9dcfda8eb9","type":3}}'
     m_Space: -1
   m_Property:
     name: mainTexture

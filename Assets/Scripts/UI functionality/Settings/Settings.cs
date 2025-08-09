@@ -75,7 +75,7 @@ public class Settings : EditorWindow
         if(!RuntimeSettingsData.faceCameraPlane)
         {
             EditorGUI.indentLevel++;
-            DrawTextOrientationInputFields();
+            DrawTextOrientationInputVector();
             EditorGUI.indentLevel--;
         }
 
@@ -170,9 +170,9 @@ public class Settings : EditorWindow
         RuntimeSettingsData.historyDepth = EditorGUILayout.IntField("History Prompt Depth", RuntimeSettingsData.historyDepth);
     }
 
-    private void DrawTextOrientationInputFields()
+    private void DrawTextOrientationInputVector()
     {
-        RuntimeSettingsData.rotation = EditorGUILayout.Vector3Field("rotation", RuntimeSettingsData.rotation);
+        RuntimeSettingsData.orientation = EditorGUILayout.Vector3Field("Orientation", RuntimeSettingsData.orientation);
     }
 }
 

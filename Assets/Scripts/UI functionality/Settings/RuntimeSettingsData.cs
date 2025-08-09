@@ -18,9 +18,9 @@ public static class RuntimeSettingsData
     public static int historyDepth = 3;
 
     // colour
-    public static Color uninfluencedTextColor = Color.white;
+    public static Color uninfluencedTextColor = Color.black;
 
     // orientation
     public static bool faceCameraPlane;
-    public static Vector3 rotation = Vector3.up;
+    public static Vector3 orientation = Vector3.up;
 }

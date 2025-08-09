@@ -42,9 +42,4 @@ public static class RuntimeInteractionData
     public static bool influenceVisible = true;
 
     public static bool influenceRadiusVisible = true;
-
-    // orientation
-    public static bool isEditingTextOrientation = false;
-
-    public static Vector3 orientation = Vector3.up;
 }
