@@ -40,6 +40,9 @@ public class PathSentenceGenerator : MonoBehaviour
         string llmOutput = await LLMManager.Instance.PromptLLM(prompt);
         int outputLength = llmOutput.Length;
 
+        // debugging
+        Debug.Log("generated output: " + llmOutput);
+
         // caluclate pathPoints
         List<Vector3> pathPointPositions = SplineCalculator.CalculateSplinePoints(path.StartNode.Position, path.EndNode.Position, outputLength);
 

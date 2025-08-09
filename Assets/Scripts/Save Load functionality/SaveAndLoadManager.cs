@@ -41,7 +41,9 @@ public class SaveAndLoadManager : MonoBehaviour
 
         foreach(Graph graph in graphs)
         {
+
             string graphSaveKey = $"{graphSaveKeyStart}_{graph.ID}";
+
             GraphSaveAndLoad.SaveGraph(graph, graphSaveKey, saveFile);
         }
 

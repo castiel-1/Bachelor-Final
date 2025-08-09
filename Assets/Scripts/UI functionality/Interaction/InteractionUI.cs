@@ -203,14 +203,14 @@ public class InteractionUI : EditorWindow
 
                 if (RuntimeInteractionData.isDeletingHandle)
                 {
-                    GUILayout.BeginHorizontal();
+                    EditorGUILayout.BeginHorizontal();
                     {
                         GUILayout.Space(40);
 
                         // cancel handle deletion button
                         DrawCancelToolUseButton();
                     }
-                    GUILayout.EndHorizontal();
+                    EditorGUILayout.EndHorizontal();
                 }
 
                 // cancel path editing button

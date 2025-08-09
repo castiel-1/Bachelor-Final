@@ -33,6 +33,8 @@ public class NodeToCursorPathCreationStrategy : IPathCreationStrategy
 
         if (startNode == null)
         {
+            startNode = currentNode;
+
             // make button appear that asks for confirmation
             RuntimeInteractionData.askForPathCreationCursorPositionConfirmation = true;
 
@@ -59,6 +61,11 @@ public class NodeToCursorPathCreationStrategy : IPathCreationStrategy
         Node endNode = GraphOperations.CreateNode(graph, cursorPosition);
 
         // create a path
+        // debugging 
+        Debug.Log("graph: " + graph);
+        Debug.Log("startnode: " + startNode);
+        Debug.Log("endNode: " + endNode);
+
         GraphOperations.CreatePath(graph, startNode, endNode);
 
         pathCreationTool.StopInteraction();

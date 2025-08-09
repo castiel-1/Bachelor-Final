@@ -21,6 +21,6 @@ public static class RuntimeSettingsData
     public static Color uninfluencedTextColor = Color.black;
 
     // orientation
-    public static bool faceCameraPlane;
+    public static bool faceCameraPlane = true;
     public static Vector3 orientation = Vector3.up;
 }
