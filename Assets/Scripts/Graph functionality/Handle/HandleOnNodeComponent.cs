@@ -31,9 +31,6 @@ public class HandleOnNodeComponent : MonoBehaviour
             connectedPaths.AddRange(Node.Incoming);
             connectedPaths.AddRange(Node.Outgoing);
 
-            // debugging
-            Debug.Log("connected paths: " + connectedPaths.Count);  
-
             foreach(Path path in connectedPaths)
             {
                 HandleManager.Instance.UpdateSpline(path);

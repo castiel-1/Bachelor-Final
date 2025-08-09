@@ -23,9 +23,6 @@ public static class InfluenceSaveAndLoad
 
         saveFile.AddOrUpdateData(semanticInfluencesSaveKey, semanticInfluenceSaveDataList);
         saveFile.Save();
-
-        // debugging
-        Debug.Log("semantic influences saved");
     }
 
     public static void SaveColorInfluences(List<ColorInfluence> colorInfluences, string colorInfluenceSaveKey, SaveFile saveFile)
@@ -47,9 +44,6 @@ public static class InfluenceSaveAndLoad
 
         saveFile.AddOrUpdateData(colorInfluenceSaveKey , colorInfluenceSaveDataList);
         saveFile.Save();
-
-        // debugging
-        Debug.Log("color influences saved");
     }
 
     public static void LoadSemanticInfluences(string semanticInfluenceSaveKey, SaveFile saveFile)
@@ -62,9 +56,6 @@ public static class InfluenceSaveAndLoad
 
             InfluenceManager.Instance.AddSemanticInfluence(semanticInfluence.name, semanticInfluence.position, semanticInfluence.radius, prefab, semanticInfluence.promptModifier);
         }
-
-        // debugging
-        Debug.Log("semantic influences loaded");
     }
 
     public static void LoadColorInfluences(string colorInfluenceSaveKey, SaveFile saveFile)
@@ -77,8 +68,5 @@ public static class InfluenceSaveAndLoad
 
             InfluenceManager.Instance.AddColorInfluence(colorInfluence.name, colorInfluence.position, colorInfluence.radius, prefab, colorInfluence.color.colorValue);
         }
-
-        // debugging
-        Debug.Log("color influences loaded");
     }
 }

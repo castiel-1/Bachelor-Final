@@ -322,7 +322,6 @@ public class InteractionUI : EditorWindow
         if(GUILayout.Button("Create New Path"))
         {
             ToolManager.ActivateTool(pathCreationTool);
-            Debug.Log("path creation started, button pressed");
         }
     }
 
@@ -363,8 +362,6 @@ public class InteractionUI : EditorWindow
 
             // hide cursor position confirmation button again
             RuntimeInteractionData.askForPathCreationCursorPositionConfirmation = false;
-
-            Debug.Log("path creation cancelled, button pressed");
         }
     }
 
@@ -372,10 +369,6 @@ public class InteractionUI : EditorWindow
     {
         if(GUILayout.Button("Delete Path"))
         {
-            // debugging
-            Debug.Log("path deletion started");
-
-
             ToolManager.ActivateTool(pathDeletionTool);
         }
     }
@@ -384,9 +377,6 @@ public class InteractionUI : EditorWindow
     {
         if(GUILayout.Button("Edit Path"))
         {
-            // debugging
-            Debug.Log("path editing started");
-
             RuntimeInteractionData.isEditingPath = true;
 
             // deactivate any active tool since we want to start editing the path so we don't want to have other tools active
@@ -401,9 +391,6 @@ public class InteractionUI : EditorWindow
     {
         if (GUILayout.Button("Cancel"))
         {
-            // debugging
-            Debug.Log("cancel edit path button pressed");
-
             RuntimeInteractionData.isEditingPath = false;
 
             ToolManager.DeactivateTool();
@@ -417,9 +404,6 @@ public class InteractionUI : EditorWindow
     {
         if (GUILayout.Button("Add Handle"))
         {
-            // debugging
-            Debug.Log("add handle button pressed");
-
             ToolManager.ActivateTool(handleCreationTool);
         }
     }
@@ -428,9 +412,6 @@ public class InteractionUI : EditorWindow
     {
         if (GUILayout.Button("Delete Handle"))
         {
-            // debugging
-            Debug.Log("delete handle button pressed");
-
             ToolManager.ActivateTool(handleDeletionTool);
         }
     }
@@ -439,9 +420,6 @@ public class InteractionUI : EditorWindow
     {
         if (GUILayout.Button("Cancel"))
         {
-            // debugging
-            Debug.Log("cancel tool use button pressed");
-
             ToolManager.DeactivateTool();
         }
     }

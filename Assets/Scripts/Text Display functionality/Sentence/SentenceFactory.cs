@@ -8,9 +8,6 @@ public static class SentenceFactory
     {
         if(lineDirections == null)
         {
-            // debugging
-            Debug.Log("line directions null");
-
             lineDirections = new Vector3[text.Length];
             for (int i = 0; i < text.Length; i++)
             {
@@ -31,7 +28,6 @@ public static class SentenceFactory
                 size = sizes[i],
                 color = colors[i]
             };
-            Debug.Log("normal: " + normal);
 
             letters[i] = letter;
         }

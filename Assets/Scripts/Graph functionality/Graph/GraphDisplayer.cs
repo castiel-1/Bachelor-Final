@@ -64,9 +64,6 @@ public class GraphDisplayer : MonoBehaviour
 
     public void SpawnPathPoints(Path path, Graph graph)
     {
-        // debugging
-        Debug.Log("spawning " + path.pathPoints.Count + " path points");
-
         GameObject pathParent = new GameObject("Path_" + path.StartNode.ID + "_" + path.EndNode.ID);
         pathParent.transform.parent = transform;
         pathParent.SetActive(false);
@@ -92,9 +89,6 @@ public class GraphDisplayer : MonoBehaviour
                 textSize = (RuntimeSettingsData.textSizeMax - RuntimeSettingsData.textSizeMin) / 2f;
             }
             float sphereRadius = textSize / 1.5f;
-
-            // debugging
-            Debug.Log("point prefab sphere radius: " + sphereRadius);
 
             nextPoint.transform.localScale = new Vector3(sphereRadius, sphereRadius, sphereRadius);
 
@@ -145,9 +139,6 @@ public class GraphDisplayer : MonoBehaviour
     
     public void SpawnHandleOnPath(Handle handle, Path path)
     {
-        // debugging
-        Debug.Log("Spawn Handle on path called");
-
         GameObject handleGO = Instantiate(handlePrefab, handle.Position, Quaternion.identity, pathObjects[path].transform);
         handleGO.name = "pathHandle_";
         handleGO.AddComponent<HandleOnPathComponent>().Initialize(path, handle);
@@ -157,9 +148,6 @@ public class GraphDisplayer : MonoBehaviour
 
     public void DespawnHandleOnPath(Handle handle)
     {
-        // debugging
-        Debug.Log("Despawn Handle called");
-
         GameObject handleGO = handleOnPathObjects[handle];
         Destroy(handleGO);
 
@@ -168,9 +156,6 @@ public class GraphDisplayer : MonoBehaviour
 
     public void MoveSpawnedHandleOnPath(Handle handle, Vector3 position, Path path)
     {
-        // debugging
-        Debug.Log("handle moved after recreation");
-
         GameObject handleGO = handleOnPathObjects[handle];
         handleGO.transform.SetPositionAndRotation(position, Quaternion.identity);
 

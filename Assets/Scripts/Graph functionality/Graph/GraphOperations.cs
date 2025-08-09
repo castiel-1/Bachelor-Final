@@ -52,9 +52,6 @@ public static class GraphOperations
 
     public static void AddPathPoints(Graph graph, Path path, List<Vector3> pathPointPositions)
     {
-        // debugging
-        Debug.Log("added " + pathPointPositions.Count + " path points");
-
         path.pathPoints = pathPointPositions;
 
         graph.RaisePathPointsAdded(path, graph);

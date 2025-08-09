@@ -53,7 +53,7 @@ public class SaveAndLoadManager : MonoBehaviour
         InfluenceSaveAndLoad.SaveColorInfluences(colorInfluences, colorInfluencesSaveKey, saveFile);
 
         // debugging
-        Debug.Log("saved everything");
+        Debug.Log("scene saved as " + saveFile.fileName);
     }
 
     public void LoadScene()
@@ -69,5 +69,8 @@ public class SaveAndLoadManager : MonoBehaviour
         {
             GraphSaveAndLoad.LoadGraph($"{graphSaveKeyStart}_{i}", saveFile);
         }
+
+        // debugging
+        Debug.Log("scene loaded");
     }
 }

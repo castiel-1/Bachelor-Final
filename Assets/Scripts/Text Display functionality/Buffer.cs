@@ -1,20 +1,6 @@
 using UnityEngine;
 using UnityEngine.VFX;
 
-
-/* 
-
-IF IN SCENE
-- provides the blueprint for letterStructs
-
-METHODS
-- SetUpBuffer(): sets up buffer
-- UpdateBuffer(LetterStruct[]): updates the buffer with changes to all structs in letterStruct[]
-- GetIndex(char): returns findex of char to be used in flipbook
-- SetLetterCount(count): sets letterCount so we know how many letters we want to display <-- this is strictly necessary!!
-
- */
-
 // struct for each letter holding information for displaying it
 
 [VFXType(VFXTypeAttribute.Usage.GraphicsBuffer)]
@@ -53,9 +39,6 @@ public class Buffer : MonoBehaviour
     // create graphics buffer
     public void SetUpBuffer(int numLetterStructs)
     {
-        //DEBUG
-        Debug.Log("buffer is set up with number of letterStructs: " + numLetterStructs);
-
         graphicsBuffer = new GraphicsBuffer(GraphicsBuffer.Target.Structured, numLetterStructs,
             System.Runtime.InteropServices.Marshal.SizeOf(typeof(LetterStruct)));
 
@@ -66,9 +49,6 @@ public class Buffer : MonoBehaviour
     // adds a sentence to the buffer beginning at startIndex
     public void AddSentenceToBuffer(LetterStruct[] letterStructs, Sentence sentence, Vector3 size) // size for bounding box of vfx graph
     {
-        // debugging
-        Debug.Log("update buffer called");
-
         graphicsBuffer.SetData(letterStructs, 0, sentence.StartIndex, sentence.Text.Length);
 
         visualEffect.SetVector3("Size", size);

@@ -32,9 +32,6 @@ public class PathSentenceGenerator : MonoBehaviour
 
     public async void HandlePathCreated(Path path, Graph graph)
     {
-        // debugging
-        Debug.Log("Handle path created called");
-
         // get full prompt
         int numWords = RandomizeNumberOfWords(RuntimeSettingsData.numberOfWordsMin, RuntimeSettingsData.numberOfWordsMax);
         string prompt = FullPromptBuilder.BuildPrompt(graph, path, numWords, RuntimeSettingsData.historyDepth);
@@ -43,25 +40,14 @@ public class PathSentenceGenerator : MonoBehaviour
         string llmOutput = await LLMManager.Instance.PromptLLM(prompt);
         int outputLength = llmOutput.Length;
 
-        // debugging
-        Debug.Log("llm output received in handle path created");
-        Debug.Log(llmOutput);
-
         // caluclate pathPoints
         List<Vector3> pathPointPositions = SplineCalculator.CalculateSplinePoints(path.StartNode.Position, path.EndNode.Position, outputLength);
-
-        // debugging
-        Debug.Log("number of pathPoints at calculation: " + pathPointPositions.Count);
 
         // add path points (which raises event to spawn them as well)
         GraphOperations.AddPathPoints(graph, path, pathPointPositions);
 
-        // debugging
-        Debug.Log("creating handle on start node...");
         Handle startHandle = HandleManager.Instance.CreateHandleOnNode(path.StartNode, path, true);
 
-        // debugging
-        Debug.Log("creating handle on end node...");
         Handle endHandle = HandleManager.Instance.CreateHandleOnNode(path.EndNode, path, false);
 
         // calculate sizes
@@ -82,24 +68,14 @@ public class PathSentenceGenerator : MonoBehaviour
 
     public void HandlePathRecreated(Path path, Graph graph, string sentenceText)
     {
-        // debugging
-        Debug.Log("handle path recreated called");
-
         // caluclate pathPoints
         List<Vector3> pathPointPositions = SplineCalculator.CalculateSplinePoints(path.StartNode.Position, path.EndNode.Position, sentenceText.Length);
-
-        // debugging
-        Debug.Log("number of pathPoints at calculation: " + pathPointPositions.Count);
 
         // add path points (which raises event to spawn them as well)
         GraphOperations.AddPathPoints(graph, path, pathPointPositions);
 
-        // debugging
-        Debug.Log("creating handle on start node...");
         Handle startHandle = HandleManager.Instance.CreateHandleOnNode(path.StartNode, path, true);
 
-        // debugging
-        Debug.Log("creating handle on end node...");
         Handle endHandle = HandleManager.Instance.CreateHandleOnNode(path.EndNode, path, false);
 
         // calculate sizes

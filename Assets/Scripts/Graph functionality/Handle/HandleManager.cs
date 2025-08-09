@@ -61,8 +61,6 @@ public class HandleManager : MonoBehaviour
             if(pathPointIndex >= currentStartIndex && pathPointIndex < currentEndIndex)
             {
                 path.HandlesWithIndeces[nextHandle] = pathPointIndex;
-                // debugging
-                Debug.Log("handle index when creating it: " + pathPointIndex);
 
                 goto Finish;
             }
@@ -89,20 +87,11 @@ public class HandleManager : MonoBehaviour
 
     public Handle CreateHandleOnNode(Node node, Path path, bool isStartNode)
     {
-        // debugging
-        Debug.Log("number of path points in create handle: " + path.pathPoints.Count);
-
         // if the node already has a handle
         if(nodeHandleDict.TryGetValue(node, out Handle handleAtNode))
         {
-            // debugging
-            Debug.Log("node already has handle");
-
             if (isStartNode)
             {
-                // debugging
-                Debug.Log("the handle is inserted for a startNode");
-
                 path.HandlesWithIndeces[handleAtNode] = 0;
             }
             else
@@ -115,8 +104,6 @@ public class HandleManager : MonoBehaviour
 
         // if the node doesn't have a handle yet
 
-        // debugging
-        Debug.Log("node doesn't have a handle yet");
         Handle nextHandle;
         if (isStartNode)
         {
@@ -125,9 +112,6 @@ public class HandleManager : MonoBehaviour
         }
         else
         {
-            // debugging
-            Debug.Log("new handle has as index: " + path.pathPoints.Count);
-
             nextHandle = new Handle(node.Position); // numpathpoint.length because that is after the last pathPoint which is where the end Node is (doesnt have a pathPoint)
             path.HandlesWithIndeces[nextHandle] = path.pathPoints.Count;
         }
@@ -157,9 +141,6 @@ public class HandleManager : MonoBehaviour
 
     public void UpdateSpline(Path path)
     {
-        // debugging
-        Debug.Log("updating spline");
-
         List<(Handle, int)> handlesAndIndices = path.HandlesWithIndeces
             .OrderBy(kv => kv.Value)
             .Select(kv => (kv.Key, kv.Value))
@@ -180,9 +161,6 @@ public class HandleManager : MonoBehaviour
         for (int i = 0; i < numSegments; i++)
         {
             int pointsInSegment = handlesAndIndices[i+1].Item2 - handlesAndIndices[i].Item2;
-
-            // debugging
-            Debug.Log("number of pointsInSegment: " +  pointsInSegment);
 
             Vector3 p0;
             Vector3 p1 = handlesAndIndices[i].Item1.Position;

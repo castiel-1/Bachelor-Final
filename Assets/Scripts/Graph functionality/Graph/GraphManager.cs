@@ -36,9 +36,6 @@ public class GraphManager : MonoBehaviour
 
     public Graph CreateGraph(Vector3 startPosition, Vector3 endPosition) // the position of the start and end node of the first path
     {
-        // debugging
-        Debug.Log("creating graph");
-
         GameObject graphGO = Instantiate(graphPrefab);
         graphGO.name = "gaph_" + graphID;
        
@@ -66,9 +63,6 @@ public class GraphManager : MonoBehaviour
 
     public Graph RecreateGraph()
     {
-        // debugging
-        Debug.Log("recreating graph");
-
         GameObject graphGO = Instantiate(graphPrefab);
         graphGO.name = "gaph_" + graphID;
 
@@ -91,9 +85,6 @@ public class GraphManager : MonoBehaviour
 
     public void DeleteGraph(Graph graph)
     {
-        // debugging
-        Debug.Log("delete graph called");
-
         if( graph!= null)
         {
             // delete all sentences from buffer

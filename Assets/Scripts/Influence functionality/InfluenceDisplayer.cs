@@ -149,9 +149,6 @@ public class InfluenceDisplayer : MonoBehaviour
 
     private void DespawnSemanticInfluence(SemanticInfluence influence)
     {
-        // debugging
-        Debug.Log("influence despawned");
-
         GameObject instance = spawnedSemanticInfluences[influence];
         Destroy(instance);
         spawnedSemanticInfluences.Remove(influence);
@@ -159,9 +156,6 @@ public class InfluenceDisplayer : MonoBehaviour
 
     private void DespawnColorInfluence(ColorInfluence influence)
     {
-        // debugging
-        Debug.Log("visual influence despawned");
-
         GameObject instance = spawnedColorInfluences[influence];
         Destroy(instance);
         spawnedColorInfluences.Remove(influence);

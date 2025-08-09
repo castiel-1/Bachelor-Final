@@ -29,20 +29,12 @@ public class NodeToNodePathCreationStrategy : IPathCreationStrategy
         if (startNode == null)
         {
             startNode = currentNode;
-            //debugging
-            Debug.Log("start node has been selected: " + startNode);
         }
         else if(currentNode != startNode)
         {
             endNode = currentNode;
-            // debugging
-            Debug.Log("end node has been selected: " + endNode);
 
-          
             GraphOperations.CreatePath(graph, startNode, endNode);
-
-            // debugging
-            Debug.Log("new path has been created");
 
             pathCreationTool.StopInteraction();
 

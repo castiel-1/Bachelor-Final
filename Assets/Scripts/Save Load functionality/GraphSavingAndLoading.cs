@@ -9,18 +9,12 @@ public static class GraphSaveAndLoad
 {
     public static void SaveGraph(Graph graph, string graphSaveKey, SaveFile saveFile)
     {
-        // debugging
-        Debug.Log("graph save key: " + graphSaveKey);
-
         GraphSaveData graphSaveData = ConvertToGraphSaveData(graph);
 
         Debug.Log("graph save data: " + graphSaveData);
 
         saveFile.AddOrUpdateData(graphSaveKey, graphSaveData);
         saveFile.Save();
-
-        // debugging
-        Debug.Log("graph saved");
     }
 
     private static GraphSaveData ConvertToGraphSaveData(Graph graph)
@@ -55,33 +49,19 @@ public static class GraphSaveAndLoad
 
             List<HandleSaveData> savableHandles = new();
 
-            // debugging
-            Debug.Log("handles with indeces:" + path.HandlesWithIndeces.Values.Count);
-            Debug.Log("path handle index: " + path.HandlesWithIndeces.Values.ToList()[0]);
-            Debug.Log("path handle index: " + path.HandlesWithIndeces.Values.ToList()[1]);
-            Debug.Log("path handle index: " + path.HandlesWithIndeces.Values.ToList()[2]);
-
             foreach (Handle handle in path.HandlesWithIndeces.Keys)
             {
                 int handleIndex = path.HandlesWithIndeces[handle];
 
                 // without adding handles on start and end node
-                //debugging
-                Debug.Log("path points count:" + path.pathPoints.Count);
-
                 if ((handleIndex != 0) && (handleIndex != path.pathPoints.Count))
                 {
-                    // debugging
-                    Debug.Log("added savable handle with index: " + handleIndex);
-
                     HandleSaveData savableHandle = new HandleSaveData();
                     savableHandle.position = handle.Position;
                     savableHandle.index = path.HandlesWithIndeces[handle];
                     savableHandles.Add(savableHandle);
                 }
             }
-            // debugging
-            Debug.Log("savables handles length:" + savableHandles.Count);
 
             pathSaveData.handles = savableHandles;
 
@@ -120,18 +100,12 @@ public static class GraphSaveAndLoad
 
             Path recreatedPath = GraphOperations.RecreatePath(graph, startNode, endNode, path.sentenceText);
 
-            // debugging
-            Debug.Log("recreated Path num points: " + recreatedPath.pathPoints.Count);
-
             // handles
             List<Handle> recreatedHandles = new();
 
             // recreate the handles
             foreach(HandleSaveData handle in path.handles)
             {
-                // debugging
-                Debug.Log("handle index: " + handle.index);
-
                 Handle recreatedHandle = HandleManager.Instance.CreateHandleOnPath(recreatedPath.pathPoints[handle.index], recreatedPath, handle.index);
                 recreatedHandles.Add(recreatedHandle);
             }

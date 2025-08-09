@@ -11,15 +11,9 @@ public static class ColorInfluenceCalculator
         Color[] colors = new Color[pathPoints.Length];
         List<ColorInfluence> colorInfluences = InfluenceManager.Instance.ColorInfluences;
 
-        // debugging
-        Debug.Log("number of color influences: " +  colorInfluences.Count);
-
         // default colour according to settings if no colour influences are there
         if(colorInfluences.Count == 0)
         {
-            // debugging
-            Debug.Log("no color influences found");
-
             for (int i = 0; i < pathPoints.Length; i++)
             {
                 colors[i] = uninfluencedTextColor;
@@ -41,9 +35,6 @@ public static class ColorInfluenceCalculator
                 // if point is in sphere
                 if (distance <= influence.Radius)
                 {
-                    // Debugging
-                    Debug.Log("point in sphere");
-
                     float weight = 1f - (distance / influence.Radius);
                     mixedColor += influence.Color * weight;
                     totalWeight += weight;

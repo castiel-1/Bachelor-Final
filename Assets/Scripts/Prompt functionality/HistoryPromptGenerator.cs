@@ -10,9 +10,6 @@ public static class HistoryPromptGenerator
             return "";
         }
 
-        // debugging
-        Debug.Log("all branches count: " + allBranches.Count);
-
         string prompt = "The sentence should take into account the story so far: ";
 
         for(int i = 0; i < allBranches.Count; i++)

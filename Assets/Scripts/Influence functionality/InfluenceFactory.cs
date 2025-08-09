@@ -5,9 +5,6 @@ public static class InfluenceFactory
 {
     public static SemanticInfluence CreateSemanticInfluence(string name, Vector3 position, float radius, GameObject prefab, string promptModifier)
     {
-        // debugging
-        Debug.Log("create semantic influence called in factory method");
-
         // use standard sphere if no gameObject chosen
         if(prefab == null)
         {
@@ -17,9 +14,6 @@ public static class InfluenceFactory
         // use beginning of prompt if no name is chosen
         if(name == "" && promptModifier != "")
         {
-            // debugging
-            Debug.Log("name is null and will be replaced by prompt mod");
-
             string[] promptWords = promptModifier.Split(' ');
 
             Debug.Log(promptWords[0]);

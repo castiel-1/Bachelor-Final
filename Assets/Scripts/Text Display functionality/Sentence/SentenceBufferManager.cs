@@ -33,11 +33,6 @@ public class SentenceBufferManager : MonoBehaviour
 
     public Sentence AddSentence(string text, List<Vector3> letterPositions, float[] sizes, Vector3 normal, Vector3[] lineDirections, Color[] colors)
     {
-
-        // debugging
-        Debug.Log("add sentence in sentencebuffermanager called");
-        Debug.Log("size: " + sizes[0]);
-
         var (sentence, letters) = SentenceFactory.CreateSentence(text, currentBufferIndex, letterPositions, sizes, normal, lineDirections, colors);
         sentenceStructDict.Add(sentence, letters);
 
@@ -58,10 +53,6 @@ public class SentenceBufferManager : MonoBehaviour
 
     public void UpdateSentence(Path path)
     {
-
-        // debugging
-        Debug.Log("updating path and sentence: " + path.StartNode + path.EndNode);
-
         Sentence sentence = path.Sentence;
         var letterStructs = sentenceStructDict[sentence];
 

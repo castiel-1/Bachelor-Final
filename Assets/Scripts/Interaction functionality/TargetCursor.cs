@@ -35,14 +35,8 @@ public class TargetCursor : MonoBehaviour
 
         Ray ray = new Ray(cam.transform.position, direction);
 
-        // debugging
-        Debug.DrawRay(ray.origin, ray.direction * maxDistance, Color.cyan, 2f);
-
         if(Physics.Raycast(ray, out RaycastHit hit, maxDistance))
         {
-            // debugging
-            Debug.Log("raycast hit in point: " + hit.point);
-
             return hit.point;
         }
 
@@ -53,9 +47,6 @@ public class TargetCursor : MonoBehaviour
     public Vector3 GetCursorPosition()
     {
         Transform cursorPrefabTransform = transform.GetChild(0);
-
-        // debugging
-        Debug.Log("target cursor position requested: " + cursorPrefabTransform.position);
 
         return cursorPrefabTransform.position;
     }

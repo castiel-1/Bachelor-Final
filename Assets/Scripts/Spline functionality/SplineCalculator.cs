@@ -28,7 +28,6 @@ public static class SplineCalculator
 
     private static Vector3 GetCatmullRomPoint(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
     {
-
         Vector3 calculatedPoint =
         0.5f *
         ((2 * p1) +

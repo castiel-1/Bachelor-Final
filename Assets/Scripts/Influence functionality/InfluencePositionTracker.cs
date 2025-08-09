@@ -8,9 +8,6 @@ public class InfluencePositionTracker : MonoBehaviour
     {
         if(transform.position != Influence.Position)
         {
-            // debugging
-            Debug.Log("influence has moved");
-
             Influence.Position = transform.position;
         }
     }
