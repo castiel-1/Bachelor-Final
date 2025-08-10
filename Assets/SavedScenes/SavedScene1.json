@@ -1,0 +1,891 @@
+{
+  "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Esper.ESave.SavableObjects.SavableObject, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "graphCountSaveKey": {
+    "$type": "Esper.ESave.SavableObjects.SavableData`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "value": 1,
+    "id": "graphCountSaveKey"
+  },
+  "graphSaveKey_0": {
+    "$type": "Esper.ESave.SavableObjects.SavableData`1[[GraphSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "value": {
+      "$type": "GraphSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "NodeID": 22,
+      "Nodes": {
+        "$type": "System.Collections.Generic.List`1[[NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "$values": [
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 0,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 2.48582125,
+              "y": 0.220000029,
+              "z": 1.167,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 1,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 1.97982109,
+              "y": 1.521,
+              "z": 1.167,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 2,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 0.77699995,
+              "y": 1.68642056,
+              "z": 1.332,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 3,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": -0.175,
+              "y": 1.596,
+              "z": 1.183,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 4,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": -0.72117877,
+              "y": 0.8154206,
+              "z": 1.233,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 5,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 2.299,
+              "y": 2.50442076,
+              "z": 1.233,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 6,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 1.475,
+              "y": 2.097,
+              "z": 0.738,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 7,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": -0.0250000954,
+              "y": 2.19542074,
+              "z": 0.738,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 8,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": -0.0231788158,
+              "y": 2.59742069,
+              "z": 1.2734549,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 10,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 0.8529999,
+              "y": 1.47442067,
+              "z": 1.027,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 11,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 1.78282118,
+              "y": 2.87842083,
+              "z": 0.606,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 12,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": -0.3491788,
+              "y": 0.877420664,
+              "z": 1.043,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 13,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": -0.922178745,
+              "y": 2.217,
+              "z": 0.907,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 16,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": -0.01817894,
+              "y": 3.02742052,
+              "z": 1.139,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 17,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": -0.317178965,
+              "y": 2.88842058,
+              "z": 1.32,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 18,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": -0.313178778,
+              "y": 2.65042067,
+              "z": 1.241,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 19,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 0.628,
+              "y": 1.24142063,
+              "z": 1.241,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 20,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 0.789,
+              "y": 1.16,
+              "z": 1.0129,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 21,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 0.5350001,
+              "y": 1.45442057,
+              "z": 0.992,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 22,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 2.078,
+              "y": 2.99042082,
+              "z": 0.686,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 23,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 1.79,
+              "y": 3.291,
+              "z": 0.686,
+              "w": 0.0
+            }
+          },
+          {
+            "$type": "NodeSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ID": 24,
+            "position": {
+              "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "x": 2.016,
+              "y": 3.291,
+              "z": 0.56,
+              "w": 0.0
+            }
+          }
+        ]
+      },
+      "Paths": {
+        "$type": "System.Collections.Generic.List`1[[PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "$values": [
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 0,
+            "endNodeID": 1,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 2.305,
+                    "y": 0.968000054,
+                    "z": 1.167,
+                    "w": 0.0
+                  },
+                  "index": 15
+                }
+              ]
+            },
+            "sentenceText": "The forest has mountains."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 1,
+            "endNodeID": 2,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 1.287,
+                    "y": 1.732,
+                    "z": 1.25775,
+                    "w": 0.0
+                  },
+                  "index": 11
+                }
+              ]
+            },
+            "sentenceText": "The mountains tower."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 2,
+            "endNodeID": 3,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 0.24811101,
+                    "y": 1.7529999,
+                    "z": 1.24922216,
+                    "w": 0.0
+                  },
+                  "index": 15
+                }
+              ]
+            },
+            "sentenceText": "The mountains decay slowly."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 3,
+            "endNodeID": 4,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": -0.4619999,
+                    "y": 1.273,
+                    "z": 1.20572722,
+                    "w": 0.0
+                  },
+                  "index": 10
+                }
+              ]
+            },
+            "sentenceText": "The mountains crumble."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 1,
+            "endNodeID": 5,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 2.173,
+                    "y": 1.807,
+                    "z": 1.19010007,
+                    "w": 0.0
+                  },
+                  "index": 7
+                },
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 2.198,
+                    "y": 2.08099985,
+                    "z": 1.21206439,
+                    "w": 0.0
+                  },
+                  "index": 14
+                }
+              ]
+            },
+            "sentenceText": "The mountains tower."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 1,
+            "endNodeID": 6,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 1.771,
+                    "y": 1.80900013,
+                    "z": 0.952500045,
+                    "w": 0.0
+                  },
+                  "index": 10
+                }
+              ]
+            },
+            "sentenceText": "The mountains tower."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 2,
+            "endNodeID": 7,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 0.443000078,
+                    "y": 1.94999993,
+                    "z": 1.05063152,
+                    "w": 0.0
+                  },
+                  "index": 9
+                }
+              ]
+            },
+            "sentenceText": "The mountains loom."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 6,
+            "endNodeID": 8,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 0.2939999,
+                    "y": 2.453,
+                    "z": 0.950947344,
+                    "w": 0.0
+                  },
+                  "index": 14
+                },
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 0.8539996,
+                    "y": 2.35,
+                    "z": 0.8364472,
+                    "w": 0.0
+                  },
+                  "index": 6
+                }
+              ]
+            },
+            "sentenceText": "The mountains loom."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 1,
+            "endNodeID": 10,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 1.39698255,
+                    "y": 1.419,
+                    "z": 1.09458625,
+                    "w": 0.0
+                  },
+                  "index": 15
+                },
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 1.66639507,
+                    "y": 1.49,
+                    "z": 1.128059,
+                    "w": 0.0
+                  },
+                  "index": 8
+                }
+              ]
+            },
+            "sentenceText": "The mountains are very steep."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 6,
+            "endNodeID": 11,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 1.502,
+                    "y": 2.538,
+                    "z": 0.6685263,
+                    "w": 0.0
+                  },
+                  "index": 10
+                }
+              ]
+            },
+            "sentenceText": "The mountains loom."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 3,
+            "endNodeID": 12,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": -0.171999931,
+                    "y": 1.23671031,
+                    "z": 1.11299992,
+                    "w": 0.0
+                  },
+                  "index": 11
+                }
+              ]
+            },
+            "sentenceText": "The mountains crumble."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 7,
+            "endNodeID": 13,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": -0.493093252,
+                    "y": 2.13,
+                    "z": 0.8261739,
+                    "w": 0.0
+                  },
+                  "index": 12
+                }
+              ]
+            },
+            "sentenceText": "The mountains dominate."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 8,
+            "endNodeID": 16,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": -0.0390000343,
+                    "y": 2.815,
+                    "z": 1.19875777,
+                    "w": 0.0
+                  },
+                  "index": 5
+                }
+              ]
+            },
+            "sentenceText": "Darkness."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 8,
+            "endNodeID": 17,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": -0.1730001,
+                    "y": 2.776,
+                    "z": 1.29931331,
+                    "w": 0.0
+                  },
+                  "index": 5
+                }
+              ]
+            },
+            "sentenceText": "Darkness."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 8,
+            "endNodeID": 18,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": -0.1630795,
+                    "y": 2.64899969,
+                    "z": 1.25542438,
+                    "w": 0.0
+                  },
+                  "index": 5
+                }
+              ]
+            },
+            "sentenceText": "Darkness."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 10,
+            "endNodeID": 19,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 0.7565713,
+                    "y": 1.379,
+                    "z": 1.11871433,
+                    "w": 0.0
+                  },
+                  "index": 3
+                },
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 0.791095257,
+                    "y": 1.41392982,
+                    "z": 1.08587837,
+                    "w": 0.0
+                  },
+                  "index": 2
+                }
+              ]
+            },
+            "sentenceText": "Danger."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 10,
+            "endNodeID": 20,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 0.793,
+                    "y": 1.29475164,
+                    "z": 1.01894283,
+                    "w": 0.0
+                  },
+                  "index": 4
+                }
+              ]
+            },
+            "sentenceText": "Danger."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 10,
+            "endNodeID": 21,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 0.7167144,
+                    "y": 1.476,
+                    "z": 1.012,
+                    "w": 0.0
+                  },
+                  "index": 3
+                }
+              ]
+            },
+            "sentenceText": "Danger."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 11,
+            "endNodeID": 22,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 1.94680929,
+                    "y": 2.95699978,
+                    "z": 0.650444448,
+                    "w": 0.0
+                  },
+                  "index": 5
+                }
+              ]
+            },
+            "sentenceText": "Darkness."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 11,
+            "endNodeID": 23,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 1.809,
+                    "y": 3.10763121,
+                    "z": 0.650444448,
+                    "w": 0.0
+                  },
+                  "index": 5
+                }
+              ]
+            },
+            "sentenceText": "Darkness."
+          },
+          {
+            "$type": "PathSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "startNodeID": 11,
+            "endNodeID": 24,
+            "handles": {
+              "$type": "System.Collections.Generic.List`1[[HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+              "$values": [
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 1.91236484,
+                    "y": 3.078,
+                    "z": 0.580444455,
+                    "w": 0.0
+                  },
+                  "index": 5
+                },
+                {
+                  "$type": "HandleSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "position": {
+                    "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "x": 1.94009542,
+                    "y": 3.13030624,
+                    "z": 0.574973941,
+                    "w": 0.0
+                  },
+                  "index": 6
+                }
+              ]
+            },
+            "sentenceText": "Darkness."
+          }
+        ]
+      }
+    },
+    "id": "graphSaveKey_0"
+  },
+  "semanticInfluencesSaveKey": {
+    "$type": "Esper.ESave.SavableObjects.SavableData`1[[System.Collections.Generic.List`1[[SemanticInfluenceSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "value": {
+      "$type": "System.Collections.Generic.List`1[[SemanticInfluenceSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        {
+          "$type": "SemanticInfluenceSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "name": "nature",
+          "position": {
+            "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "x": 2.083,
+            "y": 0.224,
+            "z": 1.167,
+            "w": 0.0
+          },
+          "radius": 0.5,
+          "prefabName": "SemanticInfluenceP",
+          "promptModifier": "nature"
+        },
+        {
+          "$type": "SemanticInfluenceSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "name": "decay",
+          "position": {
+            "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "x": 0.335,
+            "y": 1.577,
+            "z": 1.167,
+            "w": 0.0
+          },
+          "radius": 0.3,
+          "prefabName": "SemanticInfluenceP",
+          "promptModifier": "decay"
+        }
+      ]
+    },
+    "id": "semanticInfluencesSaveKey"
+  },
+  "colorInfluencesSaveKey": {
+    "$type": "Esper.ESave.SavableObjects.SavableData`1[[System.Collections.Generic.List`1[[ColorInfluenceSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "value": {
+      "$type": "System.Collections.Generic.List`1[[ColorInfluenceSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        {
+          "$type": "ColorInfluenceSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "name": "green",
+          "position": {
+            "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "x": 1.763,
+            "y": 1.483,
+            "z": 1.167,
+            "w": 0.0
+          },
+          "radius": 1.5,
+          "prefabName": "ColorInfluenceP",
+          "color": {
+            "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "x": 0.136492833,
+            "y": 0.2924528,
+            "z": 0.06759523,
+            "w": 1.0
+          }
+        },
+        {
+          "$type": "ColorInfluenceSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "name": "brown",
+          "position": {
+            "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "x": -0.511,
+            "y": 1.007,
+            "z": 1.167,
+            "w": 0.0
+          },
+          "radius": 1.0,
+          "prefabName": "ColorInfluenceP",
+          "color": {
+            "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "x": 0.294117659,
+            "y": 0.123999506,
+            "z": 0.0666666552,
+            "w": 1.0
+          }
+        },
+        {
+          "$type": "ColorInfluenceSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "name": "more green",
+          "position": {
+            "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "x": -0.228,
+            "y": 2.616,
+            "z": 1.233,
+            "w": 0.0
+          },
+          "radius": 1.0,
+          "prefabName": "ColorInfluenceP",
+          "color": {
+            "$type": "Esper.ESave.SavableObjects.SavableVector, ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "x": 0.0815644562,
+            "y": 0.294117659,
+            "z": 0.0666666552,
+            "w": 1.0
+          }
+        }
+      ]
+    },
+    "id": "colorInfluencesSaveKey"
+  }
+}
