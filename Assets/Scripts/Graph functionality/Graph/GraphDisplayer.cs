@@ -33,7 +33,7 @@ public class GraphDisplayer : MonoBehaviour
         HandleManager.OnHandleOnNodeCreated += SpawnHandleOnNode;
         HandleManager.OnHandleOnNodeDestroyed += DespawnHandleOnNode;
         HandleManager.OnHandleOnPathCreated += SpawnHandleOnPath;
-        HandleManager.OnHandleOnPathDestroyed += DespawnHandleOnNode;
+        HandleManager.OnHandleOnPathDestroyed += DespawnHandleOnPath;
         HandleManager.OnSplineUpdated += UpdatePathPoints;
         HandleManager.OnToggleAllHandles += ToggleHandles;
 
@@ -52,7 +52,7 @@ public class GraphDisplayer : MonoBehaviour
         HandleManager.OnHandleOnNodeDestroyed -= DespawnHandleOnNode;
         HandleManager.OnHandleOnNodeCreated -= SpawnHandleOnNode;
         HandleManager.OnHandleOnPathCreated -= SpawnHandleOnPath;
-        HandleManager.OnHandleOnPathDestroyed -= DespawnHandleOnNode;
+        HandleManager.OnHandleOnPathDestroyed -= DespawnHandleOnPath;
         HandleManager.OnSplineUpdated -= UpdatePathPoints;
         HandleManager.OnToggleAllHandles -= ToggleHandles;
 

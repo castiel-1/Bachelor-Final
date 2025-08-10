@@ -124,6 +124,9 @@ public class HandleManager : MonoBehaviour
 
     public void DeleteHandleOnPath(Handle handle, Path path)
     {
+        // debugging
+        Debug.Log("in delete handle on path");
+
         path.HandlesWithIndeces.Remove(handle);
 
         UpdateSpline(path);

@@ -56,8 +56,6 @@ public class SentenceBufferManager : MonoBehaviour
         Sentence sentence = path.Sentence;
         var letterStructs = sentenceStructDict[sentence];
 
-        Debug.Log("num letterstructs: " + letterStructs.Length + ", num pathPoints: " + path.pathPoints.Count);
-
         Vector3[] lineDirections = OrientationOperations.CalculateLineDirections(path.pathPoints.ToArray());
 
         for(int i = 0; i < letterStructs.Length; i++)

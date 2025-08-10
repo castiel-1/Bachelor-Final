@@ -81,6 +81,7 @@ public class InfluenceDisplayer : MonoBehaviour
         // spawn radius
         Material radiusMaterial = Resources.Load<Material>("Materials/SemanticInfluenceRadiusM");
         GameObject radiusGO = SpawnRadius(influence.Radius, radiusMaterial, instance.transform);
+        radiusGO.layer = LayerMask.NameToLayer("Ignore Raycast");
 
         return instance;
     }

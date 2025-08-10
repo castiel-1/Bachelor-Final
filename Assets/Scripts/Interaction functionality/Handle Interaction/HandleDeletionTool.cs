@@ -34,9 +34,16 @@ public class HandleDeletionTool : ISceneInteractionTool
         GameObject hitObject = hitInfo.collider.gameObject;
         HandleOnPathComponent handleComponent = hitObject.GetComponent<HandleOnPathComponent>();
 
+        // debugging
+        Debug.Log("handle component in tool: " + handleComponent);
+
         if (handleComponent)
     {
             Handle handle = handleComponent.Handle;
+
+            // debugging
+            Debug.Log("handle in tool: " + handle);
+
             Path path = handleComponent.Path;
             useLeftClick = true;
             HandleManager.Instance.DeleteHandleOnPath(handle, path);
