@@ -16,6 +16,9 @@ public class InteractionUI : EditorWindow
     private bool showInfluenceInteractions = false;
     private bool showSaveAndLoad = false;
 
+    // scroll position
+    private Vector2 scrollPos;
+
     // tools
     private GraphCreationTool graphCreationTool = new();
     private PathCreationTool pathCreationTool = new();
@@ -37,37 +40,40 @@ public class InteractionUI : EditorWindow
 
     private void OnGUI()
     {
-        // foldout graph
-        showGraphinteractions = EditorGUILayout.Foldout(showGraphinteractions, "Graph Interaction", true);
-        if (showGraphinteractions)
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos, false, true);
         {
-            DrawGraphCreationUI();
-        }
+            // foldout graph
+            showGraphinteractions = EditorGUILayout.Foldout(showGraphinteractions, "Graph Interaction", true);
+            if (showGraphinteractions)
+            {
+                DrawGraphCreationUI();
+            }
 
-        // foldout path
-        showPathInteractions = EditorGUILayout.Foldout(showPathInteractions, "Path Interactions", true);
-        if (showPathInteractions)
-        {
-            DrawPathCreationUI();
-            DrawPathDeletionUI();
-            DrawPathEditingUI();
-        }
+            // foldout path
+            showPathInteractions = EditorGUILayout.Foldout(showPathInteractions, "Path Interactions", true);
+            if (showPathInteractions)
+            {
+                DrawPathCreationUI();
+                DrawPathDeletionUI();
+                DrawPathEditingUI();
+            }
 
-        // foldout influence
-        showInfluenceInteractions = EditorGUILayout.Foldout(showInfluenceInteractions, "Influence Interactions", true);
-        if (showInfluenceInteractions)
-        {
-            DrawInfluenceCreationUI();
-            DrawInfluenceVisibilityUI();
-        }
+            // foldout influence
+            showInfluenceInteractions = EditorGUILayout.Foldout(showInfluenceInteractions, "Influence Interactions", true);
+            if (showInfluenceInteractions)
+            {
+                DrawInfluenceCreationUI();
+                DrawInfluenceVisibilityUI();
+            }
 
-        // scene saving and loading
-        showSaveAndLoad = EditorGUILayout.Foldout(showSaveAndLoad, "Save And Load Scene", true);
-        if(showSaveAndLoad)
-        {
-            DrawSaveAndLoadUI();
+            // scene saving and loading
+            showSaveAndLoad = EditorGUILayout.Foldout(showSaveAndLoad, "Save And Load Scene", true);
+            if (showSaveAndLoad)
+            {
+                DrawSaveAndLoadUI();
+            }
         }
-
+        EditorGUILayout.EndScrollView();
     }
 
     private void DrawSaveAndLoadUI()
@@ -434,7 +440,7 @@ public class InteractionUI : EditorWindow
 
     private void DrawCreateVisualInfluenceButton()
     {
-        if (GUILayout.Button("Create Visual Influence"))
+        if (GUILayout.Button("Create Colour Influence"))
         {
             ToolManager.ActivateTool(visualInfluenceCreationTool);
         }
@@ -463,7 +469,7 @@ public class InteractionUI : EditorWindow
 
     private void DrawSemanticInfluenceCreationConfirmationButton()
     {
-        if(GUILayout.Button("Confirm Influence Parameters"))
+        if(GUILayout.Button("Confirm Semantic Influence Parameters"))
         {
             semanticInfluenceCreationTool.HandleInfluenceCreationConfirmation();
         }
@@ -471,7 +477,7 @@ public class InteractionUI : EditorWindow
 
     private void DrawVisualInfluenceCreationConfirmationButton()
     {
-        if (GUILayout.Button("Confirm Visual Influence Parameters"))
+        if (GUILayout.Button("Confirm Colour Influence Parameters"))
         {
             visualInfluenceCreationTool.HandleInfluenceCreationConfirmation();
         }

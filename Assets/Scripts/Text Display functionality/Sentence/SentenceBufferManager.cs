@@ -5,7 +5,8 @@ public class SentenceBufferManager : MonoBehaviour
 {
     public static SentenceBufferManager Instance { get; private set; }
 
-    private Dictionary<Sentence, LetterStruct[]> sentenceStructDict = new();
+    public Dictionary<Sentence, LetterStruct[]> sentenceStructDict = new();
+
     private int currentBufferIndex = 0;
     private Vector3 maxSize = Vector3.zero;
 

@@ -69,7 +69,7 @@ public class PathSentenceGenerator : MonoBehaviour
 
     }
 
-    public void HandlePathRecreated(Path path, Graph graph, string sentenceText)
+    public void HandlePathRecreated(Path path, Graph graph, string sentenceText, Color[] colours)
     {
         // caluclate pathPoints
         List<Vector3> pathPointPositions = SplineCalculator.CalculateSplinePoints(path.StartNode.Position, path.EndNode.Position, sentenceText.Length);
@@ -85,14 +85,11 @@ public class PathSentenceGenerator : MonoBehaviour
         ITextSizeStrategy textSizeStrategy = TextSizeStrategyFactory.CreateTextSizeStrategy();
         float[] sizes = textSizeStrategy.GetTextSizes(path.pathPoints.Count);
 
-        // add colour
-        Color[] colors = ColorInfluenceCalculator.CalculateColorInfluences(path.pathPoints.ToArray());
-
         // caluclate line directions
         Vector3[] lineDirections = OrientationOperations.CalculateLineDirections(pathPointPositions.ToArray());
 
         // create buffer
-        Sentence sentence = SentenceBufferManager.Instance.AddSentence(sentenceText, path.pathPoints, sizes, RuntimeSettingsData.orientation, lineDirections, colors);
+        Sentence sentence = SentenceBufferManager.Instance.AddSentence(sentenceText, path.pathPoints, sizes, RuntimeSettingsData.orientation, lineDirections, colours);
         path.Sentence = sentence;
 
     }

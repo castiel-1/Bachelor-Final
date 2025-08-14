@@ -37,7 +37,9 @@ public class TargetCursor : MonoBehaviour
 
         if(Physics.Raycast(ray, out RaycastHit hit, maxDistance))
         {
-            return hit.point;
+            Vector3 surfaceNormal = hit.normal;
+
+            return hit.point + 0.02f * surfaceNormal.normalized; // to ensure the text is slightly away from the surface and not in it
         }
 
         Debug.Log("nothing hit with raycast, no meshes close enough");

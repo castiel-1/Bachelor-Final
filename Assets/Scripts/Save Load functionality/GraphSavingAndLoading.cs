@@ -67,6 +67,15 @@ public static class GraphSaveAndLoad
 
             pathSaveData.sentenceText = path.Sentence.Text;
 
+            LetterStruct[] letters = SentenceBufferManager.Instance.sentenceStructDict[path.Sentence];
+            SavableVector[] colours = new SavableVector[letters.Length];
+            for(int i = 0; i < letters.Length; i++)
+            {
+                colours[i] = letters[i].color.ToSavable();
+            }
+
+            pathSaveData.letterColors = colours;
+
             paths.Add(pathSaveData);
         }
 
@@ -97,8 +106,14 @@ public static class GraphSaveAndLoad
             Node startNode = nodesByID[path.startNodeID];
             Node endNode = nodesByID[path.endNodeID];
 
+            // recreate colour array
+            Color[] colours = new Color[path.letterColors.Length];
+            for(int i = 0; i < path.letterColors.Length; i++)
+            {
+                colours[i] = path.letterColors[i].colorValue;
+            }
 
-            Path recreatedPath = GraphOperations.RecreatePath(graph, startNode, endNode, path.sentenceText);
+            Path recreatedPath = GraphOperations.RecreatePath(graph, startNode, endNode, path.sentenceText, colours);
 
             // handles
             List<Handle> recreatedHandles = new();

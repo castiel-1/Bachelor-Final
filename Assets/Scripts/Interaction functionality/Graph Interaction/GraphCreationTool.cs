@@ -22,13 +22,26 @@ public class GraphCreationTool : ISceneInteractionTool
     {
         if(!hasStartPosition)
         {
-            startPosition = TargetCursor.Instance.GetCursorPosition();
+            if (RuntimeSettingsData.onSurface)
+            {
+                startPosition = TargetCursor.Instance.GetSurfacePoint();
+            }
+            else
+            {
+                startPosition = TargetCursor.Instance.GetCursorPosition();
+            }
             hasStartPosition = true;
         }
         else
         {
-            endPosition = TargetCursor.Instance.GetCursorPosition();
-
+            if(RuntimeSettingsData.onSurface)
+            {
+                endPosition = TargetCursor.Instance.GetSurfacePoint();
+            }
+            else
+            {
+                endPosition = TargetCursor.Instance.GetCursorPosition();
+            }
             GraphManager.Instance.CreateGraph(startPosition, endPosition);
             
             StopInteraction();

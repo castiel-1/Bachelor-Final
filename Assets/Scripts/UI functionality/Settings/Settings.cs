@@ -16,6 +16,9 @@ public class Settings : EditorWindow
     // toggle
     private bool previousFaceCameraPlane = RuntimeSettingsData.faceCameraPlane;
 
+    // scroll position
+    private Vector2 scrollPos;
+
     [MenuItem("Window/Prototype Settings")]
     public static void ShowWindow()
     {
@@ -29,9 +32,18 @@ public class Settings : EditorWindow
 
     private void OnGUI()
     {
-        DrawPathSettings();
-        DrawTextSettings();
-        DrawLLMSettings(); 
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos, false, true);
+        {
+            // create space between scrollbar and content
+            EditorGUILayout.BeginVertical(GUILayout.Width(position.width - 20));
+            {
+                    DrawPathSettings();
+                    DrawTextSettings();
+                    DrawLLMSettings();
+            }
+            EditorGUILayout.EndVertical();
+        }
+        EditorGUILayout.EndScrollView();
     }
 
     private void DrawPathSettings()

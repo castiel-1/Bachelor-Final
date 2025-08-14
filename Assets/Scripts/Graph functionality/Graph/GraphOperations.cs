@@ -11,7 +11,7 @@ public static class GraphOperations
     public static event Action<bool> OnTogglePathPoints;
     public static event Action<Path, Graph> OnPathCreated;
     public static event Action<Sentence> OnPathDeleted; // used to delete sentence
-    public static event Action<Path, Graph, string> OnPathRecreated;
+    public static event Action<Path, Graph, string, Color[]> OnPathRecreated;
 
     public static Node CreateNode(Graph graph, Vector3 position)
     {
@@ -37,7 +37,7 @@ public static class GraphOperations
         return nextPath;
     }
 
-    public static Path RecreatePath(Graph graph, Node startNode, Node endNode, string sentenceText)
+    public static Path RecreatePath(Graph graph, Node startNode, Node endNode, string sentenceText, Color[] colours)
     {
         Path nextPath = new Path(startNode, endNode);
         graph.Paths.Add(nextPath);
@@ -45,7 +45,7 @@ public static class GraphOperations
         startNode.Outgoing.Add(nextPath);
         endNode.Incoming.Add(nextPath);
 
-        OnPathRecreated?.Invoke(nextPath, graph, sentenceText);
+        OnPathRecreated?.Invoke(nextPath, graph, sentenceText, colours);
 
         return nextPath;
     }
